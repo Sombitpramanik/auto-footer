@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto matic footer Using Java Script.</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            height: 300px;
+            width: 95vw;
+            border: 1px solid red;
+            margin: 5px 50%;
+            padding: 10px;
+            text-align: center;
+            text-transform: capitalize;
+            transform: translate(-50%);
+        }
+        #yer{
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            font-style: italic;
+            margin: 10px 50%;
+            width: 100%;
+            transform: translate(-100%);
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <span>this is some text </span><br>
+        <span id="yer"></span>
+    </footer>    
+</body>
+<script>
+    let currentYear = new Date().getFullYear();
+    let yer = document.getElementById("yer");
+    yer.innerText = "Copyright "+currentYear+" THINKBIZZ MARCOM PVT LTD";
+</script>
+</html>
